@@ -1,0 +1,26 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js");
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+
+//variables
+$bg-color: #f0f0f0;
+$border-color: #ccc;
+$text-color: #fff;
+
+.box{
+    width: 180px;
+    height: 80px;
+    text-align: center;
+    border:1px solid $border-color;
+    margin: 15px;
+}
+.box1{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid $border-color;
+    margin: 15px;
+    background-color:$bg-color ;
+}

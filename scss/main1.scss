@@ -1,0 +1,63 @@
+/* 
+style sheet for cs202 
+version: 1.1
+last modified: 10/5/202
+author: Eri Sotelo
+email: soteloe2@wwu.edu
+website: Eriksotelo.com/// lesson.html
+*/
+
+/* import scss (specify location of file) */
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+/* import partial (partals start with _) */
+@import "button";
+
+/* scss variables ($name of variable)*/
+
+$primary:#05a081;
+$margin: 22px;
+
+h2,h3{
+    color: $primary;
+}
+
+body{
+    background-color: #fff3f0;
+    // font-family: Arial, Helvetica, sans-serif;
+    // font-style: italic;
+    // font-weight: bold;
+    // line-height: 200%;
+    // text-transform:uppercase ;
+
+    // font short hand
+
+    // font: italic bold 18px/200% arial; 
+
+    // nesting properties
+    font: {
+        family: arial;
+        style: regular;
+        weight: light;
+        font: 18px;
+    }
+}
+
+// nesting element (can style parent child elements)
+
+nav{
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: $primary;
+        font-weight: bold;
+        display: inline-block;
+        padding: 1em 2em;
+        font: { 
+                weight: bold;
+                size: 18px; 
+                margin:$margin/2;
+        };
+    }
+}

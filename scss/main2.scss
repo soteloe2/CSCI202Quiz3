@@ -1,0 +1,125 @@
+/* 
+style sheet for cs202 
+version: 2.0
+last modified: 10/10/202
+author: Eri Sotelo
+email: soteloe2@wwu.edu
+website: Eriksotelo.com/// lesson 4.html
+*/
+/* table of content:
+1.variables
+2.body
+3.header
+4.nav
+5.banner
+6.main page
+7.footer
+8.section
+*/
+/* import bootstrap */
+@import"../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+/* variables (consistent with all pages designed)*/
+$main-color: #05a081;
+$text-color:#fff;
+$bg-color:#eee;
+$bg-color2: #333;
+
+
+body{
+/*     font-family: 'nunito', sans-serif;
+    font-size: 18px; */
+
+    font: {
+        family: 'Nunito', sans-serif;
+        size: 18px;}}
+
+
+
+header{
+    width: 100%;
+    position: absolute;}
+
+// /* .banner */
+//     background-image: url(../background.jpg);
+//     background-size: cover;
+
+// or this will get same results
+
+//     background:{
+//         image:url(../background.jpg);
+//         size: cover;
+//     } ;
+.banner{
+    background-image: url(../background.jpg);
+    background-size: cover;
+
+    width: 100%;
+    height: 80vh;}
+
+
+
+nav{
+    text-align: center;
+    a{text-decoration: none;
+    color: $text-color;
+    display: inline-block;
+    padding: 1em 2em;
+}}
+
+
+main{
+    background-color: $bg-color;}
+
+
+
+.sideleft{
+    width: 30%;
+    float: left;}
+
+
+
+.sideright{
+    width: 60%;
+    float: right;}
+
+
+
+.btn{
+    background-color: $main-color;
+    padding: .6em 2em;
+    color:$text-color;
+    /* box-shadow: horizontal, vertical, blur radius */
+    box-shadow: 0 2px 10px rgba(0,0,0,.6);
+    border-radius: 25px;}
+
+
+
+.box{
+    width: 30%;
+    text-align: center;
+    float: left;
+    color: $text-color;
+    padding: 2em;}
+
+
+
+// custom css
+.bg-color{
+    background-color: $bg-color2;
+    overflow: hidden;}
+
+
+
+.padding{
+    padding: 4rem 0;}
+
+
+
+footer{
+    text-align: center;
+    width: 100%;
+    
+}
