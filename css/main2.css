@@ -9711,7 +9711,7 @@ main {
 
 .btn {
   background-color: #05a081;
-  padding: 06em 2em;
+  padding: .6em 2em;
   color: #fff;
   /* box-shadow: horizontal, vertical, blur radius */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
